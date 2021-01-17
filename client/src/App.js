@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
+import NavBar from './components/NavBar'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>hello</h1>
+        <NavBar />
       </div>
     )
   }
