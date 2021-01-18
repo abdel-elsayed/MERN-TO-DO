@@ -3,6 +3,10 @@
   float: right;
 }
 
+.add-btn {
+  margin-bottom: 0.5rem;
+}
+
 .fade-enter {
   opacity: 0.01;
 }
