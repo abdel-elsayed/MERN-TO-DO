@@ -1,7 +1,5 @@
 import React, {Component} from 'react'
 import {
-    Collapse,
-    Container,
     Modal,
     Form,
     Button,
@@ -12,7 +10,6 @@ import {
     Input
   } from 'reactstrap'
 
-  import { v1 as uuid } from 'uuid'
   import { connect } from 'react-redux'
   import { addItem } from '../actions/itemActions'
 
@@ -36,7 +33,6 @@ import {
           e.preventDefault();
 
           const newitem = {
-              id: uuid(),
               name: this.state.name
           }
 

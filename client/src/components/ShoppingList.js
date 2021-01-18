@@ -17,15 +17,15 @@ class ShoppingList extends Component {
             <Container>
                 <ListGroup>
                     <TransitionGroup className="Shopping-list">
-                        {items.map(({id,name}) => (
-                            <CSSTransition key={id} timeout={500} classNames="fade">
+                        {items.map(({_id,name}) => (
+                            <CSSTransition key={_id} timeout={500} classNames="fade">
                                 <ListGroupItem >
                                    
                                     <Button
                                     className="remove-btn"
                                     color="danger"
                                     size="sm"
-                                    onClick={ () => this.props.deleteItem(id)}
+                                    onClick={ () => this.props.deleteItem(_id)}
                                     >&times;</Button>
 
                                     {name}
